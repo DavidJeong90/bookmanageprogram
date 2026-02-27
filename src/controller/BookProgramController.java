@@ -17,7 +17,6 @@ import service.rentmanage.RentmanageImpl;
 
 public class BookProgramController {
 
-    // private Ordermanage orderService = new OrdermanagImpl();
     private Usermanage userService = new UsermanageImpl();
     private Bookmanage bookService = new BookmanageImpl();
     private Rentmanage rentService = new RentmanageImpl();
@@ -25,7 +24,6 @@ public class BookProgramController {
     // 메서드 구현.
     // 회원 가입
     public boolean join(String loginId, String loginPw, String userName, String userPhone) {
-        // 02-888-8888
         String phone1 = userPhone.substring(0, userPhone.indexOf('-'));
         String phone2 = userPhone.substring(userPhone.indexOf('-') + 1, userPhone.indexOf('-', 7));
         String phone3 = userPhone.substring(userPhone.indexOf('-', 7) + 1);

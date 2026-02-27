@@ -14,10 +14,10 @@ public class App {
     private static BookProgramController controller = new BookProgramController();
 
     // 로그인 정보를 저장한 변수
-    private static UserDTO userInfo = null; // 로그인하면 정보를 추가, 로그아웃하면 null로 변경.
+    private static UserDTO userInfo = null;
 
     public static void main(String[] args) throws Exception {
-        System.out.println("[고객 주문 관리 프로그램]");
+        System.out.println("[도서 관리 프로그램]");
         menu();
     }
 
@@ -168,7 +168,6 @@ public class App {
                     // 회원 정보 출력 후 수정
                     System.out.println("[회원 정보 확인 수정]");
                     System.out.println("사용자 ID : " + userInfo.getLoginId());
-                    // 원래 패스워드 수정은 별로의 로직으로 구성해야 합니다.
                     System.out.printf("사용자 PW(%s) : ", userInfo.getLoginPw());
                     String userPw = scanner.next();
                     scanner.nextLine();
